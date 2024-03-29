@@ -3,7 +3,7 @@ import {Form, Button, Container } from "react-bootstrap"
 import { useNavigate } from 'react-router-dom';
 
 
-const Login = (setAuthenticate) => {
+const Login = ({setAuthenticate}) => {
    const navigate = useNavigate()
   const loginUser= (event) => {
     //폼제출이아닌 단순히 버튼 클릭이벤트라 새로고침될 필요가 없다 그래서 새로고침되는 걸 막아야한다 

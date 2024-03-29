@@ -21,7 +21,7 @@ import PrivateRoute from './route/PrivateRoute';
 
 // 페이지에 공통되게 뜨는 네브바 같은 건 Route 위에 작성한다
 function App() {
-  let [authenticate, setAuthenticate] = useState(false); //true 면 로그인 됨 false 면 로그인 안됨 
+  const [authenticate, setAuthenticate] = useState(false); //true 면 로그인 됨 false 면 로그인 안됨 
   useEffect(()=>{
     console.log("aaaa" , authenticate)
   },[authenticate]);
