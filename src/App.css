@@ -38,3 +38,69 @@
   right: 40px;
 }
 
+
+.productImg{
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* 미디어쿼리 */
+@media screen and (max-width: 63rem) {
+  .hide {
+    visibility:visible;
+  }
+  .menu-list {
+    display: none;
+  }
+  .search-area{
+    display: none;
+  }
+}
+
+
+/* 햄버거 메뉴  */
+.side-menu {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: darkkhaki;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  z-index:2
+}
+.side-menu-list button {
+  margin: 5px;
+  border: none;
+  background: none;
+  width: 120px;
+}
+
+.card:hover{
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+.side-menu .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+  border: none;
+  background: none;
+}
+
+.side-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-menu-list button:hover {
+  background-color: wheat;
+  border-radius: 3px;
+} 

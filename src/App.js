@@ -26,12 +26,12 @@ function App() {
     console.log("aaaa" , authenticate)
   },[authenticate]);
   return (
-  <div>
+  <div> 
       <Navbar/>
       <Routes>
         <Route path="/Login" element={<Login setAuthenticate={setAuthenticate} />} /> 
         <Route path="/" element= {<ProductAll/>} /> 
-        <Route path="/Product/:id" element= {<PrivateRoute authenticate/>} /> 
+        <Route path="/Product/:id" element={<PrivateRoute authenticate={authenticate} />} />
       </Routes>
   </div>
   );
