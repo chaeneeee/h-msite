@@ -6,7 +6,7 @@ const ProductDetail = () => {
   let { id } = useParams();
   const [product, setProduct] = useState(null);
   const getProductDetail = async () => {
-    let url = `https://my-json-server.typicode.com/yeonseos/HNM-Project/products/${id}`;
+    let url = `https://my-json-server.typicode.com/chaeneeee/h-msite/products/${id}`;
     let response = await fetch(url);
     let data = await response.json();
     setProduct(data);
@@ -23,7 +23,7 @@ const ProductDetail = () => {
         <Col md="6">
           <div className="fz-20">{product?.title}</div>
           <div className="fz-20 fw-bold">₩ {product?.price}</div>
-          <div className="choice-text fw-bold mb-20">
+  <div className="choice-text fw-bold mb-20">
             {product?.choice == true ? "Conscious choice" : ""}
           </div>
           <Dropdown className="mb-40">
@@ -32,12 +32,12 @@ const ProductDetail = () => {
             </Dropdown.Toggle>
             <Dropdown.Menu>
               {product?.size.length > 0 &&
-                product.size.map((item) => (
+ product.size.map((item) => (
                   <Dropdown.Item href="#/action-1">{item}</Dropdown.Item>
                 ))}
             </Dropdown.Menu>
           </Dropdown>
-          <Button variant="dark" className="add-button">
+          <Button variant="danger" className="add-button">
             추가
           </Button>
         </Col>
