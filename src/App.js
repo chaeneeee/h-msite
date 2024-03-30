@@ -26,7 +26,7 @@ function App() {
     console.log("aaaa" , authenticate)
   },[authenticate]);
   return (
-  <div> 
+  <div className='wrap'>  
       <Navbar/>
       <Routes>
         <Route path="/Login" element={<Login setAuthenticate={setAuthenticate} />} /> 
